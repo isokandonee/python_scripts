@@ -2,6 +2,7 @@
 import pdfplumber
 import os
 
+
 # function to convert pdf to html
 def pdf_to_html(file_path):
     with pdfplumber.open(file_path) as pdf:
@@ -16,7 +17,10 @@ def pdf_to_html(file_path):
         html_text += "</body></html>"
     return html_text
 
+
 # get the file path
+
+
 file_path = input("Enter the file path:")
 # check if the file exists
 if os.path.isfile(file_path):
